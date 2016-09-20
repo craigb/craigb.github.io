@@ -1,0 +1,26 @@
+{
+  "source": "./_source",
+  "destination": "./_site",
+  "metadata": {
+    "title": "CraigBoucher.com",
+    "description": "My first, super-cool, Metalsmith-powered blog."
+  },
+  "plugins": {
+    "metalsmith-drafts": {},
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-layouts": {
+      "engine": "pug",
+      "directory": "./_layouts"
+    },
+    "metalsmith-collections": {
+      "posts": {
+        "pattern": ":source/posts/*.md",
+        "sortBy": "date",
+        "reverse": true
+      }
+    }
+  }
+}
