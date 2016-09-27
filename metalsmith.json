@@ -7,20 +7,23 @@
   },
   "plugins": {
     "metalsmith-drafts": {},
-    "metalsmith-markdown": {},
+    "metalsmith-collections": {
+      "posts": {
+        "pattern": "posts/*.md",
+        "sortBy": "date",
+        "reverse": true,
+        "metadata": {
+          "collection": "posts"
+        }
+      }
+    },
     "metalsmith-permalinks": {
       "pattern": ":title"
     },
+    "metalsmith-markdown": {},
     "metalsmith-layouts": {
       "engine": "pug",
       "directory": "./_layouts"
-    },
-    "metalsmith-collections": {
-      "posts": {
-        "pattern": ":source/posts/*.md",
-        "sortBy": "date",
-        "reverse": true
-      }
     }
   }
 }
