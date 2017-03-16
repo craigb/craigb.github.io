@@ -6,26 +6,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "metalsmith"
+    "compile": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/craigb/craigb.github.io.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/craigb/craigb.github.io/issues"
   },
   "homepage": "https://github.com/craigb/craigb.github.io#readme",
   "devDependencies": {
+    "jstransformer-markdown-it": "^2.0.0",
+    "jstransformer-pug": "^0.2.3",
     "metalsmith": "^2.2.0",
     "metalsmith-collections": "^0.7.0",
     "metalsmith-drafts": "0.0.1",
+    "metalsmith-jstransformer": "^0.10.1",
     "metalsmith-layouts": "^1.6.5",
-    "metalsmith-markdown": "^0.2.1",
-    "metalsmith-permalinks": "^0.5.0",
-    "metalsmith-pug": "^1.1.0",
-    "pug": "^2.0.0-beta6"
+    "metalsmith-permalinks": "^0.5.0"
   }
 }
